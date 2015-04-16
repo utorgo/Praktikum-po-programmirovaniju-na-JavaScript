@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 3 Дата и время</title>
+    <script type="text/javascript">
+        //Сценарий выводит точную дату и время посещения страницы
+        Now = new Date();
+        document.write("Вывести число: "+ Now.getDate()+"</br>");
+        document.write("Вывести месяц: "+ (Now.getMonth()+1)+"</br>");
+        document.write("Вывести год: "+ Now.getFullYear()+"</br>");
+        document.write("Сегодня " + Now.getDate() +
+            "-" + (Now.getMonth() + 1) + "-" + Now.getFullYear() + ".</br> Вы зашли на Web-страницу ровно в: " + Now.getHours() +
+            ":" + Now.getMinutes() + " и " + Now.getSeconds() +
+            " секунд.");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

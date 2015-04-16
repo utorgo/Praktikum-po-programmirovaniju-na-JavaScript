@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 3 Дата и время</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+    
+        //Сценарий выводит точную дату и время посещения страницы  
+        
+        Now = new Date();
+        
+        //Привет! Сегодня у нас 18/8/2006.
+        document.write("<h1>Привет!</h1>");
+        document.write("<div class=\"green\"><p>Сегодня у нас: " + Now.getDate()+ "/" + (Now.getMonth()+1)+ "/" +Now.getFullYear()+".</p></div>");                
+        
+    </script>
+</head>
+
+<body>	
+</body>
+
+</html>
