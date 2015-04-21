@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 4: Обработчики событий: onMouseOver</title>
+	<script>
+		
+	</script>
+</head>
+<body>
+
+    <A HREF="http://www.mail.ru"
+       onClick="alert('Посмо\'треть почту!');">
+        Щелкните здесь</A>
+
+    <FORM>
+        <INPUT TYPE="text" SIZE="30"
+               onFocus="window.status='Текст в строке состояния';">
+    </FORM>
+
+    <FORM>
+        <INPUT TYPE="text" SIZE="40"
+               VALUE="Впишите свое имя и щелкните вне текстового поля"
+               onBlur="alert('Вы изменили ответ — вы уверены, что он правильный?');">
+    </FORM>
+
+    <FORM>
+        <INPUT TYPE="text" SIZE="40"
+               VALUE="Выделите часть текста!"
+               onSelect="alert('Вы выделили текст');">
+    </FORM>
+
+    <FORM>
+        <INPUT TYPE="text" SIZE="45"
+               VALUE="Измените текст и щелкните вне поля — затем
+   проверьте строку состояния"
+               onChange="window.status='Текст был изменен'">
+    </FORM>
+
+    <FORM>
+        <INPUT TYPE="submit"
+               onSubmit="parent.location='спасибо.html'";>
+    </FORM>
+	
+</body>
+</html>

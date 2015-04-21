@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 4: Обработчики событий: onMouseOver</title>
+    <script>
+
+    </script>
+</head>
+<body onLoad="alert('Attention');">
+<FORM action="">
+
+    <INPUT TYPE="button" onSubmit="alert('Attention');">
+
+    Name: <INPUT TYPE="text" SIZE="30"
+                 onFocus="window.status='Введите свое имя';">
+    Что вы предпочитаете:
+    <INPUT TYPE="checkbox"
+           onClick="window.status='Вы выбрали шоколад';">
+    Шоколад
+    <INPUT TYPE="checkbox"
+           onClick="window.status='Вы выбрали мороженое';">
+    Мороженое
+    <INPUT TYPE="submit"
+           onClick="alert('Спасибо за участие в опросе');">
+
+</FORM>
+
+</body>
+</html>
