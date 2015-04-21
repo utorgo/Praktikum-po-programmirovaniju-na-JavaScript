@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 6 Запросы пользователю и переменные</title>
+    <SCRIPT type="text/javascript">
+		function initTitle(){		
+			var name = prompt("Пожалуйста, напишите свое имя","");
+			var d = new Date();						
+			var y =  d.getFullYear();  
+			var m = d.getMonth() + 1;  
+			var d = d.getDate();
+			var t =  m + '/' + d + '/' + y + ' ';
+			document.write("<TITLE>");
+			document.write("Привет "+name+ ". Сегодня "	+t+ ". Спасибо, что зашли.");
+			document.write("</TITLE>");
+			document.write("<H1>");
+			document.write("Результат смотри в Тайтле!");
+			document.write("</H1>");		
+		}
+	</SCRIPT>
+</head>
+<body onload="initTitle();">
+
+</body>
+</html>
