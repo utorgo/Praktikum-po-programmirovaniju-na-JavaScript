@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <script>
-        
-    </script>
+    <title>Document</title> 
 </head>
-<body onunload="now= new Date(); var nowTime = now.getTime; alert('Уже уходите? Сейчас всего только :' + timeNow);">
-   <a href="hello.html">перейти по ссылке</a> 
+<body onunload="now= new Date(); alert('Уже уходите? Сейчас всего только - ' + now.getHours() + ':' +now.getMinutes() + ':' + now.getSeconds()); return true">
+   <a 
+        onmouseover="document.getElementById('demo').innerHTML='Привет, пользователь ' + navigator.appName + '!'; return true"
+        onmouseout="document.getElementById('demo').innerHTML='Не скучаете у нас на ' + document.location + '?'; return true" href="hello.html"
+                
+    >Перейти по ссылке</a> 
+        
+   <div id="demo">       
+   </div>
 </body>
 </html>
