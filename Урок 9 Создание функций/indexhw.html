@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<SCRIPT LANGUAGE="javascript">
+		<!-- Скрыть от браузеров, не поддерживающих JavaScript
+
+		function dateinbar(){
+			
+			var yourName = prompt('Ваше имя?', 'Иван');
+			var yourSurname = prompt('Ваша фамилия', 'Иванов');
+			pageAddress = location.host;
+			alert("Привет, " + yourName + " " + yourSurname +", добро пожаловать на " + pageAddress + ", мою замечательную страницу!");
+			
+			var d = new Date();
+			var y = d.getFullYear(); 
+			var da = d.getDate(); 
+			var m = d.getMonth() + 1; 
+			var t = da + '/' + m + '/' + y; 
+
+			defaultStatus = "Вы прибыли на страницу " + t + ".";
+			document.getElementById("demo").innerHTML ="Привет, " + yourName + " " + yourSurname + ". Вы прибыли на страницу " + pageAddress + " " + t + ".";
+		}
+		// не скрывать -->
+	</SCRIPT>
+</head>
+<body id="demo" onLoad="dateinbar()">
+	
+</body>
+</html>
