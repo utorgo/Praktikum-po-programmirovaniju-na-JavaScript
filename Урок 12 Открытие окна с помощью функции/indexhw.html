@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+
+<body onload="openindex()">
+	<script>
+		function openindex() {
+			var userName = prompt('Ваше имя, пожалуйста');
+			var OpenWindow = window.open("", "newwin", "height=300,width=400");
+			OpenWindow.document.write("<HTML>");
+			OpenWindow.document.write("<TITLE>Привет, "+ userName +", вот твое окно!</TITLE>");
+			OpenWindow.document.write("<BODY BGCOLOR='06ea06'>");
+			OpenWindow.document.write("<CENTER>");
+			OpenWindow.document.write("<font size=+1>Новое окно</font><P>");
+			OpenWindow.document.write("<a href='http://www.intuit.ru' target='main'>Эта ссылка<BR> откроется в основном окне</a><p>");
+			OpenWindow.document.write("<P><HR WIDTH='60%'><P>");
+			OpenWindow.document.write("<a href='' onClick='self.close()'>Эта ссылка закроет окно</a><p>");
+			OpenWindow.document.write("</CENTER>");
+			OpenWindow.document.write("</HTML>");
+		}
+	</script>
+</body>
+
+</html>

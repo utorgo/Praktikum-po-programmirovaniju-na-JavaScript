@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 13: Метод 'Confirm' (Введение в if и else)</title>
+	<SCRIPT type="text/javascript">
+		function areYouSure() {
+			if (confirm("Уверены, что хотите посетить INTUIT?"))
+
+			{
+				parent.location = 'http://www.intuit.ru/';
+				alert("Счастливого пути");
+			} else {
+				alert("Tогда оставайтесь");
+			}
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<a onclick="areYouSure()" >Перейти на http://www.intuit.ru/</a>
+</body>
+
+</html>

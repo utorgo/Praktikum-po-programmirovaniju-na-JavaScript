@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание Урок 19: Передача данных в функцию</title>
+	<script>
+		function idLike(){
+			var myCity = document.aform.city.value;
+			var myCountry = document.aform.country.value;
+			alert("Привет, живу в " + myCountry);
+			alert("Мне нравится мой город " + myCity);
+			document.getElementById("demo").innerHTML = "Имя Вашей страны состоит из: " + myCountry.length + " букв!";
+		}
+	</script>
+</head>
+<body>
+	<form name="aform" action="indexhw.html">
+		<label>Ваш город?</label>
+		<input type="text" name="city"><br/><br/>
+		<label>Ваша страна?</label>
+		<input type="text" name="country"><br/><br/>
+		<input type="button" onclick="idLike()" value="Отправить">
+	</form>
+	<p id="demo">
+		
+	</p>
+</body>
+
+</html>

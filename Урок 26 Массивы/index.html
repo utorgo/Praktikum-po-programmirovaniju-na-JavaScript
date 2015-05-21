@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 26 Массивы</title>
+	<SCRIPT type="text/javascript">
+		var num = 0;
+		var tv = new Array();
+		tv[0] = "ОРТ";
+		tv[1] = "РТР";
+		tv[2] = "ТВЦ";
+		tv[3] = "НТВ";
+		tv[4] = "ТВ6";		
+
+		function picktv() {
+			var now = new Date();
+			num = (now.getSeconds()) % 5;
+		}
+
+		function whichtv() {
+			picktv();
+			guess = " ";
+			while (tv[num]!=guess.toUpperCase()) {
+				guess = prompt("Угадайте мой любимый телеканал:	ОРТ, РТР, ТВЦ, НТВ или ТВ6?");
+				if (guess.toUpperCase() == tv[num]) {
+					alert("Это мой любимый телеканал!");
+				} else {
+					alert("Нет, попробуйте еще раз.");
+				}
+			}
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<INPUT TYPE="button" VALUE="Угадайте телеканал!" onClick="whichtv()">
+</body>
+
+</html>

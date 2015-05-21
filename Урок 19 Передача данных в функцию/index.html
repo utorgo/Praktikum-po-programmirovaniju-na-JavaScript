@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<SCRIPT type="text/javascript">
+		function doit() {
+			alert("document.myform.fname.value — это " + document.myform.fname.value)
+			var greeting = "Привет "
+			alert(greeting + document.myform.fname.value + " " + document.myform.lname.value)
+			alert("Длина имени " + document.myform.fname.value.length)
+		}
+	</SCRIPT>
+</HEAD>
+
+<BODY>
+	<FORM NAME="myform" action="index.html">
+		Ваше имя?
+		<INPUT TYPE="text" NAME="fname">
+		<p>
+			Ваша фамилия?
+			<INPUT TYPE="text" NAME="lname">
+			<p>
+				<INPUT TYPE="button" VALUE="Отправить" onClick="doit()">
+	</FORM>
+</BODY>
+
+</HTML>

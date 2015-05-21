@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 14: Математические вычисления</title>
+</head>
+
+<body onload="mathCalc()">
+	<SCRIPT type="text/javascript">
+		function mathCalc() {
+			var pravilno = "Правильно! ";
+			var nePravilno = "Неправильно! ";
+			var question = "Сколько будет ";
+			var  privet= "Привет! " + "Будем заниматься" + " математикой!";
+			if(confirm(privet)){
+				var desat = 10;
+				alert("десять — это " + desat);
+				var dva = 2;
+				alert("два — это " + dva);
+				answer = prompt(question + "10 + 2");
+				var numsums = desat + dva;
+				if(answer == numsums){
+					alert(pravilno + "10 + 2 равно " + numsums);
+				}
+				else{
+					alert(nePravilno + "10 + 2 равно " + numsums);
+				}
+				
+				answer = prompt(question + "10 * 2");
+				var numProd = desat * dva;
+				if(answer == numProd){
+					alert(pravilno + "10 * 2 равно " + numProd);
+				}
+				else{
+					alert(nePravilno + "10 * 2 равно " + numProd);
+				}							
+			} 
+			else {
+				alert("Чтож, живи неучем!")	
+			}	
+			var z = "Пока!!!";
+			alert(z);
+			a = "1"; 
+  			b = "2";
+  			c = -3;
+  			a = b - c;
+			alert(a);
+		}
+	</SCRIPT>
+</body>
+
+</html>

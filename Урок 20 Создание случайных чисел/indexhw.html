@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function rand(){
+			var now = new Date();
+			var num = (now.getSeconds())%5;
+			//num += 1;
+			alert("Ваше число " + num);
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Нажмите кнопку что бы выбрать Ваше число!</h1>
+	<form name="aform">
+		<input type="button" value="Случайное число от 0 до 4" onclick="rand()">
+	</form>
+</body>
+
+</html>

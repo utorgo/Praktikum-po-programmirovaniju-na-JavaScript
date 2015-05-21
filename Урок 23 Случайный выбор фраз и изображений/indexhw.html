@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 23 Случайный выбор фраз и изображений</title>
+</head>
+
+<body>
+	
+
+	<SCRIPT type="text/javascript">
+		var img0 = "1.jpg";
+		var img1 = "2.jpg";
+		var img2 = "3.jpg";
+		var image = "1.jpg";
+
+		now = new Date();
+		num = (now.getSeconds()) % 3;
+
+		if (num == 0) {
+			image = img0;
+		}
+		if (num == 1) {
+			image = img1;
+		}
+		if (num == 2) {
+			image = img2;
+		}
+		document.write("Рисунок номер: " + num + "<br/><br/>");
+		var x = document.createElement("IMG");
+			x.setAttribute("src", image);
+			x.setAttribute("alt", "I Love My Puppy");
+    		document.body.appendChild(x);
+	</SCRIPT>
+	<p>.... как я обычно говорю.
+</body>
+
+</html>

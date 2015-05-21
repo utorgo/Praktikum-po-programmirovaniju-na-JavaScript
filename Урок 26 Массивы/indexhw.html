@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 26 Массивы</title>
+	<SCRIPT type="text/javascript">
+		var num = 0;
+		var url = new Array();
+		url[0] = "https://www.google.ru/?gfe_rd=cr&ei=LT1cVf34NtPBuAH94oDABg&gws_rd=ssl";
+		url[1] = "http://www.yandex.ru/";
+		url[2] = "http://www.bing.com/";
+		url[3] = "https://www.yahoo.com/";
+		url[4] = "https://duckduckgo.com/";		
+
+		function pickurl() {
+			var now = new Date();
+			num = (now.getSeconds()) % 5;
+		}
+
+		function whichurl() {
+			pickurl();
+			top.location.href = url[num];						
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<form name="myForm">
+		<INPUT TYPE="button" VALUE="Перейти по случайному адресу!" onClick="whichurl()">
+	</form>
+</body>
+
+</html>

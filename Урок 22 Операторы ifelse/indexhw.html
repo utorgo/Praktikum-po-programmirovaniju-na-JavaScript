@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 22 Операторы ifelse</title>
+	<SCRIPT type="text/javascript">
+		function rand() {
+			now = new Date();
+			num = (now.getSeconds()) % 10;
+			num = num + 1;
+		}
+
+		function guessnum() {
+			guess = prompt("Угадай, какое?")			
+			if (eval(guess) == num) {
+				alert("ПРАВИЛЬНО!!");
+				rand();
+			} else if (eval(guess) > num) {
+				alert("Нет. Это число больше. Попробуй еще.");
+			} else
+				alert("Нет. Это число меньше. Попробуй еще.");
+		}
+	</SCRIPT>
+</head>
+
+<body onLoad="rand()">
+	<h1>Я загадал число от 1 до 10</h1>
+
+	<FORM NAME="myform">
+
+		<INPUT TYPE="button" VALUE="Угадай" NAME="b1" onClick="guessnum()">
+
+	</FORM>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 21 Оператор if и ветвление</title>
+	<SCRIPT type="text/javascript">
+		function askuser() {
+			var answer = "   "
+			var statement = "Отвечайте \"м\" или \"ж\"."
+			var answer = prompt("Вы мужчина?")
+			if (answer == "м") {
+				statement = "Я тоже мужчина!"
+			}
+			if (answer == "ж") {
+				statement = "Я тоже женщина!"
+			}
+			alert(statement)
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<h1>Какого Вы пола?</h1>
+	<FORM action="index.html">
+		<INPUT TYPE="button" VALUE="Приступим!" onClick="askuser()">
+	</FORM>
+</body>
+
+</html>

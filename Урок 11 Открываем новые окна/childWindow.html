@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Modeless window example</title>
+    <script type="text/javascript">
+        function ChangeOpener (selectTag) {
+            var openerWindow = window.opener;
+            var button = openerWindow.document.getElementById ("childOpener");
+            button.style.color = selectTag.options[selectTag.selectedIndex].text;
+        }
+    </script>
+<body>
+    Change the color of the button in the opener window:
+    <select onchange="ChangeOpener (this)">
+        <option />black
+        <option />red
+        <option />blue
+        <option />green
+    </select>
+</body>
+</html>

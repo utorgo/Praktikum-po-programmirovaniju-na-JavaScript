@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 16 Изменение изображения с помощью функции</title>
+	<script>
+		function up(){
+			document.myPic.src="up.svg";
+		}
+		function down(){
+			document.myPic.src="down.svg";
+		}
+	</script>
+</head>
+<body>
+	<A HREF="http://www.intuit.ru"
+  	onMouseOver="up()"  onMouseOut="down()">
+	<IMG SRC="down.svg" NAME="myPic" BORDER=0></A> 
+</body>
+</html>

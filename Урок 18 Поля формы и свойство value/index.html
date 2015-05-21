@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 18: Поля формы и свойство value</title>
+	<SCRIPT type="text/javascript">		
+		function Gofindit(){	
+			var searchfor = document.formsearch.findthis.value;    
+			//alert('ищем :' + searchfor);
+			{                                
+				var FullSearchUrl = "https://search.yahoo.com/search?p=" + searchfor ;
+				location.href = FullSearchUrl;
+			}
+		}
+
+	</SCRIPT>
+</head>
+<body>
+	<FORM NAME="formsearch" action="index.html">
+		<label>Найдите в Yahoo:</label>
+		<INPUT NAME="findthis" SIZE="40" TYPE="text">
+		<INPUT TYPE="button" VALUE="Искать"	onClick="Gofindit();">
+	</FORM>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 18: Поля формы и свойство value</title>
+	<SCRIPT type="text/javascript">		
+		function Gofindit(){
+			var searchFor = document.formsearch.findthis.value;
+			var searchEngine = document.formsearch.searche.value;
+			var searchEngineUrl = "https://search.yahoo.com/search?p=";
+			
+			switch (searchEngine){
+				case "yandex": 	searchEngineUrl="http://yandex.ru/search/?lr=35&text="; break;
+				case "google": 	searchEngineUrl="https://www.google.ru/?gfe_rd=test#newwindow=1&safe=off&q="; break;
+				case "bing": 	searchEngineUrl="http://www.bing.com/search?q="; break;
+					default : searchEngineUrl = "https://search.yahoo.com/search?p=";
+				
+			}
+			
+			alert('Сейчас поищем на ' +searchEngine+ ' запрос по ' + searchFor);
+			{
+				var FullSearchUrl = searchEngineUrl + searchFor;
+				location.href = FullSearchUrl;
+			}
+		}
+
+	</SCRIPT>
+</head>
+<body>
+	<FORM NAME="formsearch" action="index.html">
+		<label>Что ищем?</label>
+		<INPUT NAME="findthis" SIZE="40" TYPE="text"><br/>
+		<label>Где ищем?:</label>
+		<INPUT NAME="searche" TYPE="radio" VALUE="yandex" checked="checked">
+		<label>Yandex</label>
+		<INPUT NAME="searche" TYPE="radio" VALUE="google">
+		<label>Google</label>
+		<INPUT NAME="searche" TYPE="radio" VALUE="bing">
+		<label>Bing</label><br/>
+		<INPUT TYPE="button" VALUE="Искать"	onClick="Gofindit();">
+	</FORM>
+</body>
+</html>

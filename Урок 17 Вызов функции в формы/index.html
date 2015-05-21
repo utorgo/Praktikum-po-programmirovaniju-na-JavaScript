@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 17 Вызов функции в формы</title>
+	<SCRIPT type="text/javascript">
+		function newcolor(color)
+		{
+		  alert("Вы выбрали " + color)
+		  document.bgColor=color
+		}
+	</SCRIPT>
+</head>
+<body>
+	<p>Выберите цвет фона</p>
+	<FORM>
+	 <INPUT TYPE="button" VALUE="Голубой" 
+		  onClick="newcolor('lightblue')">
+	 <INPUT TYPE="button" VALUE="Розовый" 
+		  onClick="newcolor('pink')">
+	</FORM>
+</body>
+</html>

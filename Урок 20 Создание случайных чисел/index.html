@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 20 Создание случайных чисел</title>
+	<SCRIPT type="text/javascript"> 
+		function rand()
+		  {
+			  var now=new Date()
+			  var num=(now.getSeconds())%10
+			  var num=num+1
+			  alert(num)
+		  }
+	</SCRIPT>
+</head>
+<body>
+	<h1>Случайные числа</h1>
+	 <form>  
+	   <INPUT TYPE="button" 
+	   VALUE="Случайные числа от 1 до 10"  
+	   onClick="rand()">
+	 </FORM>
+</body>
+	</html>

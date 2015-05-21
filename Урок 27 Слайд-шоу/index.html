@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 27 Слайд-шоу</title>
+	<SCRIPT type="text/javascript">
+		var num = 1;
+		img1 = new Image();
+		img1.src = "1.jpg";
+		img2 = new Image();
+		img2.src = "2.jpg";
+		img3 = new Image();
+		img3.src = "3.jpg";
+
+		function slideshow() {
+			num = num + 1;
+			if (num == 4) {
+				num = 1;
+			}
+			document.animal.src = eval("img" + num + ".src");
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<CENTER>
+		<IMG SRC="1.jpg" NAME="animal" BORDER=0>
+		<p>
+			<A HREF="JavaScript:slideshow()">Щелкните, чтобы увидеть следующую картинку</A>
+		</p>
+
+
+	</CENTER>
+</body>
+
+</html>

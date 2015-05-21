@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 21 Оператор if и ветвление</title>
+	<SCRIPT type="text/javascript">
+		function askuser() {
+			var answer = "   "
+			var statement = "Отвечайте да или нет"
+			var answer = prompt("Вы любите спорт?")
+			if (answer == "да") {
+				statement = "Я тоже люблю спорт!"
+			}
+			if (answer == "нет") {
+				statement = "Я тоже ненавижу спорт!"
+			}
+			alert(statement)
+		}
+	</SCRIPT>
+</head>
+
+<body>
+	<h1>Деятельность</h1>
+	<FORM action="index.html">
+		<INPUT TYPE="button" VALUE="Нажми здесь!" onClick="askuser()">
+	</FORM>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 23 Случайный выбор фраз и изображений</title>
+</head>
+
+<body>
+	<SCRIPT type="text/javascript">
+		var0 = "От пирогов не толстеют"
+		var1 = "Кто ходит в гости по утрам"
+		var2 = "До пятницы я совершенно свободен"
+		now = new Date()
+		num = (now.getSeconds()) % 3
+
+		if (num == 0) {
+			cliche = var0
+		}
+		if (num == 1) {
+			cliche = var1
+		}
+		if (num == 2) {
+			cliche = var2
+		}
+		document.write(cliche + "<br>")
+		document.write("Случайное число: " + num)
+	</SCRIPT>
+	<p>.... как я обычно говорю.
+</body>
+
+</html>
