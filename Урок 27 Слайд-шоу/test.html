@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Что произойдет с картинкой при проходе мыши поверх картинки?</title>
+</head>
+<body>
+   <!--img src="2.jpg" name="im"-->
+   <a href="javascript:void(0);" onClick="alert('Hello <a href... !')" onMouseover="document.im.src='./1.jpg'; return false;" onmouseout="document.im.src='./2.jpg'; return false;">
+  <img src="./1.jpg" name=im></a>
+  <!--IMG NAME=test src="3.jpg" onClick="alert('Hello <img src... !')"-->
+  <a href="index.html" onClick="alert('Hello <a href... !')"><img src="./3.jpg" name=im></a>
+</body>
+</html>
